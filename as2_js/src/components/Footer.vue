@@ -14,7 +14,7 @@
 export default {
     name: 'myFooter',
     props: ['todos', 'checkAllTodo', 'clearAllTodo'],
-    // 计算属性，将函数结果返回到模板语法中 reduce是es6知识点
+
     computed: {
         doneTotal() {
             return this.todos.reduce((pre, todo) => pre + (todo.done ? 1 : 0), 0)
